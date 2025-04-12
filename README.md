@@ -69,6 +69,7 @@ graph TD
     E --> G[Voice Pipeline]
     C --> H[Convex Database]
     C --> I[Third-Party APIs]
+---
 
 ##  Multilingual Interaction Support
 
