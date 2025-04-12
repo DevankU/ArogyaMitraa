@@ -1,5 +1,5 @@
 # 🩺 ArogyaMitra: AI-Powered Virtual Nurse Assistant
-![ArogyaMitra Logo](arogya.jpg) 
+![ArogyaMitra Logo](WhatsApp%20Image%202025-04-12%20at%2021.49.39_0215f633.jpg) 
 *"Democratizing healthcare access through AI-powered voice and vision"*
 
 ---
