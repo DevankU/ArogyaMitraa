@@ -11,9 +11,6 @@
 - [🏗️ System Architecture](#-system-architecture)
 - [💻 Installation](#-installation)
 - [🐳 Docker Deployment](#-docker-deployment)
-- [📥 Supported Input Methods](#-supported-input-methods)
-- [🗣️ Multilingual Interaction Support](#-multilingual-interaction-support)
-- [🔄 Example Interaction Flow](#-example-interaction-flow)
 
 ---
 
