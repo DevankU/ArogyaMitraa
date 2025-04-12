@@ -1,0 +1,9 @@
+{
+    "trunk": {
+      "name": "hello1",
+      "address": "clarvis-ai.pstn.twilio.com",
+      "numbers": ["+15075225320"],
+      "auth_username": "aravsaxena",
+      "auth_password": "Ganeshji@1234S"
+    }
+  }
