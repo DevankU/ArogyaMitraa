@@ -67,6 +67,9 @@ graph TD
     E --> G[Voice Pipeline]
     C --> H[Convex Database]
     C --> I[Third-Party APIs]
+    B --> J[Node.js Service Layer]
+    E --> K[ArogyaBot 1.0 (Hugging Face)]
+    B --> L[WebRTC Stream]
 ```
 
 
