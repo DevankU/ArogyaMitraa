@@ -58,9 +58,80 @@
 | Speech Recognition     | Whisper Large-v3 | Multilingual medical corpus   |
 
 ---
+## 🧠 System Architecture
+
+### 1. **User Interaction Layer**
+- **Frontend (ArogyaBot UI)**
+  - Built with React + Tailwind CSS
+  - Supports image uploads and webcam capture
+  - Accepts voice and text input
+  - Displays multilingual responses in real time
+
+- **Authentication System**
+  - Secure login/signup via stack-auth
+
+---
+
+### 2. **Backend Services Layer**
+- **Flask Server**
+  - Handles API requests and orchestrates the workflow
+  - Communicates with AI modules and databases
+
+- **Chatbot**
+  - Powered by ArogyaBot-1o Hybrid Multi-Modal finetuned Qwen-2.5-3B Vision Model on Medical Datasets.
+  - Manages cross-modality fusion, dialogue generation, and response adaptation
+
+- **Speech Engine**
+  - **OpenAI STT** with Whisper-Medium for transcription and noise suppression
+  - **Deepgram TTS** with emotion-injected speech generation
+  - **Google TTS** with emotion-injected Multilingual speech generation
+
+---
+
+### 3. **Vision & Contextual Intelligence Layer**
+- **ArogyBot-1o Injury Detection**
+  - Spatial Attention Transformer (SAT)
+  - Edge Attention Module (EAM)
+  - Multi-scale Feature Fusion
+  - Predicts injury severity: Mild / Moderate / Critical
+
+- **Emotion Recognition**
+  - Analyzes speech + facial cues
+  - Triggers emergency response if distress detected
+
+- **Gesture Recognition**
+  - Recognizes emergency gestures (e.g., hand raise)
+  - Initiates immediate alert protocol
+
+---
+
+### 4. **Core Utilities & Infrastructure**
+- **HuggingFace Spaces**
+  - Enables running of ArogyaBot-1o on cloud platform
+
+- **Redis**
+  - Caches temporary session data and transcription buffers
+
+- **FFmpeg**
+  - Handles audio preprocessing and media conversion
+
+- **Docker**
+  - Ensures containerized deployment for backend and frontend
+
+---
+
+### 5. **Emergency Response System**
+- **Alert Dispatcher**
+  - Auto-initiates hospital calls for critical injuries or distress
+  - Logs incident to medical staff dashboard
+
+- **Dashboard Integration**
+  - Displays Multiple Helath tools to the user
+  - 
+---
 
 
-**## 💻 Installation**
+## 💻 Installation
 
 ### Prerequisites
 
