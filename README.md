@@ -15,6 +15,7 @@
 - [Use Cases](#-use-cases)
 - [Contributing](#-contributing)
 - [License](#-license)
+- [Multilingual Interaction Support](#-Multilingual-Interaction-Support)
 
 ---
 
