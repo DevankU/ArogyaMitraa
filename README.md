@@ -68,7 +68,7 @@ graph TD
     C --> H[Convex Database]
     C --> I[Third-Party APIs]
     B --> J[Node.js Service Layer]
-    E --> K[ArogyaBot-1o (Hugging Face)]
+    E --> K[ArogyaBot-1o]
     B --> L[WebRTC Stream]
 ```
 
