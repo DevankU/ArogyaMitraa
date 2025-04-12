@@ -70,7 +70,7 @@ graph TD
     C --> H[Convex Database]
     C --> I[Third-Party APIs]
 
-## 🌐 Multilingual Interaction Support
+##  Multilingual Interaction Support
 
 **ArogyaMitra** provides seamless voice and text interactions in 5 major Indian languages with advanced NLP capabilities:
 
