@@ -77,14 +77,12 @@ graph TD
 
 ### Prerequisites
 
-- **Python**: 3.11+
-- **Node.js**: 18.15+
-- **Redis Server**: 7.2+
-- **FFmpeg**: 6.0+
+- **Python** 3.11+
+- **Node.js** 18.15+
+- **Redis Server** 7.2+
+- **FFmpeg** 6.0+
 
----
-
-### 🔧 Local Setup
+### Local Setup
 
 ```bash
 # Clone repository
@@ -103,6 +101,7 @@ npm run build
 
 # Configure environment variables
 cp .env.example .env
+
 ## 🐳 Docker Deployment
 
 ```bash
