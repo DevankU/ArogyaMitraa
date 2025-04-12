@@ -57,6 +57,19 @@
 ---
 ## 🧠 System Architecture
 
+```mermaid
+graph TD
+    A[User] --> B(React Frontend)
+    B --> C{FastAPI Server}
+    C --> D[Auth Service]
+    C --> E[AI Inference Engine]
+    E --> F[Vision Models]
+    E --> G[Voice Pipeline]
+    C --> H[Convex Database]
+    C --> I[Third-Party APIs]
+```
+
+
 ### 1. **User Interaction Layer**
 - **Frontend (ArogyaBot UI)**
   - Built with React + Tailwind CSS
@@ -156,7 +169,8 @@ npm run build
 
 # Configure environment variables
 cp .env.example .env
-
+```
+---
 
 ## 🐳 Docker Deployment
 
