@@ -155,7 +155,7 @@ graph TD
 
 ```bash
 # Clone repository
-git clone https://github.com/arav7781/ArogyaMitra
+git clone https://github.com/DevankU/ArogyaMitra
 cd ArogyaMitra
 
 # Install Python dependencies
