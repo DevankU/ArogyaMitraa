@@ -72,6 +72,7 @@ graph TD
     C --> H[Convex Database]
     C --> I[Third-Party APIs]
 
+---
 
 ## 💻 Installation
 
