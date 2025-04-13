@@ -1,0 +1,375 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Base styles */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Aurora effect */
+.aurora-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo styling */
+.logo {
+  font-weight: 700;
+  background: linear-gradient(90deg, #2ac9af, #4b79d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aurora-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Product description section */
+.product-description {
+  padding: 2rem 0;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .product-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.product-content {
+  flex: 1;
+}
+
+.product-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.product-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.product-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2ac9af;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.glow-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(42, 201, 175, 0.3) 0%, rgba(75, 121, 217, 0.2) 50%, transparent 70%);
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.rounded-video {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section */
+.contact-section {
+  padding: 2rem 0;
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-header h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  color: #6b7280;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  color: #4b5563;
+}
+
+.contact-info p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  color: #4b5563;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+/* Developer info section */
+.developer-info {
+  padding: 2rem 0;
+}
+
+.developer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.developer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.developer-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.developer-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.developer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.developer-details {
+  padding: 1.5rem;
+}
+
+.developer-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.developer-role {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  font:bold;
+}
+
+.developer-bio {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.developer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.dev-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  color: #4b5563;
+  transition: all 0.3s ease;
+}
+
+.dev-link:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.github:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.linkedin:hover {
+  background-color: #0077b5;
+  color: #fff;
+}
+.voice-assistant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+}
+
+.visualizer-container {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.control-section {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.conversation {
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message-agent {
+  color: #e758fa;
+}
+
+.message-user {
+  color: #2ecc71;
+}
+
+.message-text {
+  color: #333;
+}
+
+.chat-input {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #2980b9;
+}
+

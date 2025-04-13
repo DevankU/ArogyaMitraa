@@ -1,0 +1,235 @@
+/* Custom styles for the landing page */
+
+/* Contact section styles */
+.contact-section {
+  padding: 1rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-header {
+  margin-bottom: 1rem;
+}
+
+.contact-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(42, 201, 175, 0.1), rgba(75, 121, 217, 0.1));
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #4b79d9;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: rgba(75, 121, 217, 0.1);
+  color: #2ac9af;
+}
+
+/* Developer info styles */
+.developer-info {
+  padding: 1rem;
+}
+
+.developer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.developer-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.developer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.developer-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #2ac9af, #4b79d9) border-box;
+}
+
+.developer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.developer-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.developer-role {
+  color: #4b79d9;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.developer-bio {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.developer-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.dev-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #4b79d9;
+  transition: all 0.3s ease;
+}
+
+.dev-link:hover {
+  background-color: rgba(75, 121, 217, 0.1);
+  color: #2ac9af;
+}
+
+/* Animation styles */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(75, 121, 217, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(75, 121, 217, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(75, 121, 217, 0);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* YouTube video section styles */
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.aspect-w-16 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-item,
+  .developer-card {
+    padding: 1rem;
+  }
+
+  .developer-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
